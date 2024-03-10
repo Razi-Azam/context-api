@@ -2,7 +2,7 @@
   "name": "contextapp",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://razi-azam.github.io/context-api/contextApp/",
+  "homepage": "https://razi-azam.github.io/context-api/",
   "type": "module",
   "scripts": {
     "predeploy" : "npm run build",
