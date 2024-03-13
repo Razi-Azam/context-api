@@ -4,7 +4,7 @@ This repo includes concepts and projects related to context API in React.
 - ### [Create a Vite React App](create-a-vite-react-app)
 - ### [Context Api Example 1](context-api-example-1)
 
-## 1 Create a Vite React APP:
+## Create a Vite React APP
 - It helps the child component to access the data directly instead of getting it from different levels of component (props drilling). Hence, this helps in discarding the use of props drilling.
 - This is associated with the React and doesn’t exist outside the react.
 
@@ -34,5 +34,5 @@ Click on the link to view the site at your local machine.
 ![image](https://github.com/Razi-Azam/context-api/assets/106505820/612a50a6-6c6b-4def-b0cd-f3c478d2c7b0)
 
 ---
-## [2] Context Api Example 1:
+## Context Api Example 1
 [Go to Top](topics)
