@@ -36,3 +36,59 @@ Click on the link to view the site at your local machine.
 ---
 ## Context Api Example 1
 [Go to Top](#topics)
+###
+Create a context using a "createContext" method of React in a UserContext.js file.
+#### UserContext.js
+```javascript
+import React from "react";
+
+//create a context named "UserContext"
+const UserContext = React.createContext();
+
+export default UserContext
+```
+###
+Create a provider named "UserContextProvider" which is a wrapper component to provide the data to all the child components which will be wrapped inside it.
+- Passed a children prop (we can take any name instead of children) that will replace any component that we wrapped inside the provider.
+- The value contains data which will be consumed by children or child components.
+#### UserContextProvider.jsx
+```javascript
+import React, {useState} from "react";
+import UserContext from "./UserContext";
+
+const UserContextProvider = ({children}) => {
+    //here we can call API or use any data as follows
+    const [user, setUser] = useState(null);
+
+    return (
+        <UserContext.Provider value={{user, setUser}}>
+            {children}
+        </UserContext.Provider>
+    )
+}
+
+export default UserContextProvider
+```
+Now, Give access of the data to the components by wrapping the components inside UserContextProvider component.
+#### App.jsx
+```javascript
+import './App.css'
+import Login from './components/Login';
+import Profile from './components/Profile';
+import UserContextProvider from './context/UserContextProvider';
+
+function App() {
+
+  return (
+    <>
+      <UserContextProvider>
+        <h1>Context API</h1>
+        <Login />
+        <Profile />
+      </UserContextProvider>
+    </>
+  )
+}
+
+export default App
+```
