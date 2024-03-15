@@ -92,3 +92,62 @@ function App() {
 
 export default App
 ```
+### Set the user's data from the login form in the context using "setUser"
+#### Login.jsx
+```javascript
+import React, {useState, useContext} from 'react'
+import UserContext from '../context/UserContext'
+
+function Login() {
+    const [username, setUsername] = useState('')    
+    const [password, setPassword] = useState('')
+
+    const {setUser} = useContext(UserContext)
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        setUser({username, password})
+    }
+
+  return (
+    <div>
+        <h2>Login Form</h2>
+        <input 
+            type='text'
+            placeholder='User Name'
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+        />
+        <input 
+            type='text'
+            placeholder='password'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+        />
+        <button onClick={handleSubmit}>Submit</button>
+    </div>
+  )
+}
+
+export default Login
+```
+### Consume the user's data from the "user" context 
+#### Profile.jsx
+```javascript
+import React, {useContext} from 'react'
+import UserContext from '../context/UserContext'
+
+function Profile() {
+    const {user} = useContext(UserContext)
+
+    if(!user) return <div>please login</div>
+
+    return (
+        <div>
+            <h2>Welcome <span style={{color: "blue"}}>{user.username}</span></h2>
+        </div>
+    )
+}
+
+export default Profile
+```
