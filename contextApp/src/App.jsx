@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <UserContextProvider>
-        <h1>Context API</h1>
-        <Login />
+        <h1 className='text-3xl text-white font-bold'>Context API</h1>
+        <Login  />
         <Profile />
       </UserContextProvider>
     </>
