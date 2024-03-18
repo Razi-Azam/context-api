@@ -151,3 +151,9 @@ function Profile() {
 
 export default Profile
 ```
+#### Added styele to the example 1 using Talwind CSS:
+#### Screen 1: Before login
+<img width="491" alt="image" src="https://github.com/Razi-Azam/context-api/assets/106505820/c588929a-8b60-4653-83bc-c9802fc96019">
+#### Screen 2: After Login
+<img width="581" alt="image" src="https://github.com/Razi-Azam/context-api/assets/106505820/011acb60-7fa7-498f-9696-684e9f8ab5ad">
+
