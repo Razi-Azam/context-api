@@ -1,8 +1,11 @@
 # context-api
-This repo includes concepts and projects related to context API in React.
+This repo includes concepts and projects related to context API in React. I've added my own notes and styling to learn and share with others. 
+Credits: Hitesh Choudhary [Click here 👆🏻](https://www.youtube.com/watch?v=JQVBGtZMqgU) to learn from the video tutorial.
+
 ## Topics
 - [Create a Vite React App](#create-a-vite-react-app)
 - [Context Api Example 1](#context-api-example-1)
+- [ThemeSwitcher App](#theme-switcher-app)
 
 ## Create a Vite React APP
 - It helps the child component to access the data directly instead of getting it from different levels of component (props drilling). Hence, this helps in discarding the use of props drilling.
@@ -154,6 +157,12 @@ export default Profile
 #### Added styele to the example 1 using Talwind CSS:
 #### Screen 1: Before login
 <img width="491" alt="image" src="https://github.com/Razi-Azam/context-api/assets/106505820/c588929a-8b60-4653-83bc-c9802fc96019">
+
 #### Screen 2: After Login
 <img width="491" alt="image" src="https://github.com/Razi-Azam/context-api/assets/106505820/011acb60-7fa7-498f-9696-684e9f8ab5ad">
+
+[Go to Top](#topics)
+
+---
+## Theme Switcher App
 
