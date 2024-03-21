@@ -165,4 +165,19 @@ export default Profile
 
 ---
 ## Theme Switcher App
+Create context.js which will contain both context, provider, and a hook named "useTheme".
+```javascript
+import { createContext, useContext } from "react";
 
+export const ThemeContext = createContext({
+    themeMode: "light",
+    darkTheme: () => {},
+    lightTheme: () => {}
+})
+
+export const ThemeProvider = ThemeContext.Provider
+
+export default function useTheme() {
+    return useContext(ThemeContext)
+}
+```
