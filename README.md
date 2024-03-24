@@ -255,3 +255,14 @@ export default {
 
 #### 🖥️ Screen 2: Dark Mode
 ![image](https://github.com/Razi-Azam/context-api/assets/106505820/dbf861f1-0b10-471b-8dca-7aa135a5a26c)
+
+---
+### Added Glassmorphism Effects to the Card
+Note 📝 Uses the [Tailwind pattern library](https://github.com/magmaflowco/tailwindcss-patterns) for the background.
+
+#### 🖥️ Screen 3: Light Mode
+![image](https://github.com/Razi-Azam/context-api/assets/106505820/7fdfca82-994b-4e86-8e1c-3a228fbc28dc)
+
+#### 🖥️ Screen 4: Dark Mode
+![image](https://github.com/Razi-Azam/context-api/assets/106505820/a335a7ad-8579-4243-ab97-668f7c1cb96b)
+
