@@ -34,7 +34,7 @@ export default function ThemeButton() {
             after:rounded-full after:h-5 after:w-5
             after:transition-all dark:border-gray-600
             peer-checked:bg-yellow-600"></div>
-            <span className="ml-3 text-sm font-medium text-gray-900 dark:text-white">
+            <span className="ml-3 text-sm font-medium bg-white/70 dark:bg-transparent text-gray-900 dark:text-white">
                 Toggle Theme
             </span>
         </label>
