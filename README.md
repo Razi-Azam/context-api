@@ -6,7 +6,7 @@ Credits: Hitesh Choudhary [Click here 👆🏻](https://www.youtube.com/watch?v=
 - [Create a Vite React App](#create-a-vite-react-app)
 - [Context Api Example 1](#context-api-example-1)
 - [ThemeSwitcher Toggle like Tailwind CSS website](#theme-switcher-app)
- ![image](https://github.com/Razi-Azam/context-api/assets/106505820/c26d095f-3452-437c-83f2-b99b615d4dc2)
+- [Context Api with Local Storage](#context-api-with-local-storage)
 
 
 
@@ -25,19 +25,33 @@ Create a React App using Vite.
 ```javascript
 npm create vite@latest
 ```
-![image](https://github.com/Razi-Azam/context-api/assets/106505820/b68285be-89ba-4762-a704-ff9ecb952779)
+
+###
+Enter the following details.
+```
+project name: contextApp
+package name: contextapp
+select a framework: React
+select a variant: javaScript
+```
+
 ###
 Then, run the following commands to view the Vite React App.
 ```javascript
 npm i
 ```
+
 And
+
 ```javascript
 npm run dev
 ```
-Click on the link to view the site on your local machine.
-![image](https://github.com/Razi-Azam/context-api/assets/106505820/bd4374ce-3728-4f9d-95d6-5c1e88364d71)
-![image](https://github.com/Razi-Azam/context-api/assets/106505820/612a50a6-6c6b-4def-b0cd-f3c478d2c7b0)
+
+Click on the link in the terminal to view the site on your local machine.
+
+```
+➡️ Local: http://127.0.0.1:5173/
+```
 
 ---
 ## Context Api Example 1
@@ -265,4 +279,24 @@ Note 📝 Uses the [Tailwind pattern library](https://github.com/magmaflowco/tai
 
 #### 🖥️ Screen 4: Dark Mode
 ![image](https://github.com/Razi-Azam/context-api/assets/106505820/a335a7ad-8579-4243-ab97-668f7c1cb96b)
+
+
+---
+## Context Api with Local Storage 
+[Go to Top](#topics)
+
+#### What I added in this todo? 💡
+- Used "UUID" fro generating the unqiue ids for keys due to issues with Date.now().
+- Changed the cursor style to "cursor-not-allowed" on edit button when todo is completed.
+- Uses SVG icons from edit and update button.
+- Changed the style of checkbox.
+- Changed the look and feel by adding different colors.
+
+#### Upcoming features 💡
+- Trash box that will save the deleted data.
+- Setting to siwtch ligh and dark theme.
+- Add a calender to save the todos by date.
+
+<img width="1201" height="524" alt="image" src="https://github.com/user-attachments/assets/1094cb70-804c-4075-9d3f-0ff837faaf75" />
+
 
